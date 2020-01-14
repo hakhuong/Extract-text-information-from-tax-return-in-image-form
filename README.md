@@ -2,7 +2,7 @@
 
 This is a work I did to help a professor in her research of financial incentivization in NGO. 
 
-There were about 750 scanned tax returns in image form with about 100 pages each. This requires the OCR (optical character recognition) step to be automated so I can just leave the computer to run on its own. This step uses the Python file #1, which process all files in bulk. 
+There were about 800 scanned tax returns in image form with about 100 pages each. This requires the OCR (optical character recognition) step to be automated so I can just leave the computer to run on its own. This step uses the Python file #1, which process all files in bulk. 
 
 After the OCR step, I have to put all the text into text files and extract the needed chunk of information. I extracted information from the Supplementary page of Schedule J, which specifies how NGO's employees are incentivized for their work. This step poses some challenges as I have to nail down the correct "hooks" on all pages with multiple trial-and-errors. The biggest challenge was to detect a 'hidden character' ('nse') that only showed up when I processed the text file as ACSII and not as Unicode.  Yet, this hidden character was an important hook for the computer to detect the target page. 
 
